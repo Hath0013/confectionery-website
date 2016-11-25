@@ -11,7 +11,7 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-3/confectione
 
 - *Fork this repository.*
 - Create a complete, single-page website for a confectionery store.
-  <br>The name of the company must be either:
+  The name of the company must be either:
   - **Beau’s Bonbons**
   - **Coco’s Chocolatiers**
 - *It should have real text content*—**that you have to write yourself.**
@@ -35,7 +35,7 @@ There should be a significant example of everything we’ve learned this term in
 - `header`, `header nav`, `header h1`, `header li`, `header nav a`
 - `main`, `h2`, `div`, `section`, `img`, `footer`
 - `modules.css`, `grid.css`, `type.css`, `main.css`
-  <br>And many of the expected classes
+  And many of the expected classes
 - A Google Font
 - At least 1 `background-image`
 - A `background-color` or `color` hover state for the navigation links
