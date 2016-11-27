@@ -26,12 +26,13 @@ html:
       - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
       - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
       - ['link[href*="fonts.googleapis.com"]', 'A webfont from Google Fonts should be used']
-      - 'header'
+      - '.skip-links'
+      - 'header[role="banner"]'
       - 'header h1'
       - 'header nav'
       - 'header nav li'
       - 'header nav li a'
-      - 'main'
+      - 'main[role="main"]'
       - 'section'
       - 'footer'
       - 'img.img-flex'
@@ -53,6 +54,7 @@ html:
       - 'label[for]'
       - 'input[id][name]'
       - 'button[type="submit"]'
+      - 'footer[role="contentinfo"]'
     search:
       - 'micro|milli|kilo|mega|giga|tera|peta|exa|zetta|yotta'
 
