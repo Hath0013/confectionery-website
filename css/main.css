@@ -1,0 +1,359 @@
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font: normal 100%/1.3 "Muli", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+body {
+  margin: 0;
+}
+
+.main-head,
+.main-head ~ p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo-wrap {
+  margin-left: 1.3rem;
+  margin-right: -2.6em;
+  float: left;
+  width: 40px;
+  padding-top: .3rem;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+}
+
+
+.coco {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: .5rem;
+  padding-bottom: 1.3rem;
+  font-size: 1.25rem;
+  font-family: "Aref Ruqaa", serif;
+  color: #fff;
+}
+
+.coco-wrap a {
+  text-decoration: none;
+}
+
+.main-head {
+  font-family: "Aref Ruqaa", serif;
+  color: #fff;
+}
+
+.main-head ~ p {
+  color: #fff;
+}
+
+h2, h3 {
+  font-family: "Aref Ruqaa", serif;
+  color: #481600;
+}
+
+p {
+  color: #444;
+}
+
+.label {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  display: block;
+  background-color: #481600;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-2 {
+  padding-top: 1.4rem;
+  padding-right: 1rem;
+}
+
+.nav-2 li a {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 1rem;
+}
+
+.nav-2 li {
+  display: inline-block;
+}
+
+.nav-2-wrap {
+  float: right;
+}
+
+.test {
+  font-size: .9rem;
+}
+
+header nav a,
+header nav a:link,
+header nav a:visited {
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  padding: .5rem;
+  margin: -.1rem;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav a:active {
+  background-color: #481600;
+  color: #fff;
+  transition: all 250ms linear;
+}
+
+.nav {
+  background-color: #fff;
+  padding: .1rem;
+  display: none;
+}
+
+.nav-2 {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3rem;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.toggle-wrap {
+  position: absolute;
+  top: .5rem;
+  right: .6rem;
+  width: 30px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ .nav-label {
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
+.banner-wrap {
+  position: relative;
+}
+
+.banner {
+
+  background:
+  linear-gradient(to top, rgba(48, 32, 19, .8), rgba(48, 32, 19, 0) 50%),
+  url("../images/banner.jpg") no-repeat center bottom / cover;
+  height: 400px;
+  color: #fff;
+}
+
+
+.btn-wrap {
+  position: absolute;
+  top: 10rem;
+}
+
+.banner-body {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  border: solid 1px #fff;
+  border-radius: 5px;
+  padding: .5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #481600;
+  transition: all 250ms linear;
+}
+
+.link-card-group {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.link-card {
+  display: inline-block;
+  margin-top: 2rem;
+  max-height: 125px;
+  overflow: hidden;
+  margin-bottom: -2rem;
+}
+
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4rem;
+  }
+
+  .banner-img-wrap {
+    max-height: 600px;
+    overflow: hidden;
+  }
+
+  .toggle-wrap {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    width: 40px;
+  }
+
+  .logo-wrap {
+    margin-left: 1.3rem;
+    margin-right: -2.6em;
+    float: left;
+    width: 50px;
+    padding-top: .5rem;
+  }
+
+  .link-card {
+    display: inline-block;
+    margin-top: 2rem;
+    max-height: 150px;
+    overflow: hidden;
+    padding-bottom: -2rem;
+  }
+
+  .banner-wrap {
+    position: relative;
+    margin-bottom: -2rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .nav-2 {
+    display: inline-block;
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    right: 10px;
+  }
+
+  .toggle-wrap {
+    display: none;
+  }
+
+  .coco {
+    text-align: left;
+    padding-left: 6rem;
+    padding-top: .5rem;
+    padding-bottom: 1.3rem;
+    font-size: 1.25rem;
+    font-family: "Aref Ruqaa", serif;
+    color: #fff;
+  }
+
+  .link-card {
+    display: inline-block;
+    margin-top: 2rem;
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 120%;
+  }
+
+  .link-card {
+    display: inline-block;
+    margin-top: 2rem;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+}
