@@ -54,7 +54,20 @@ p {
 }
 
 header {
-  font-family: "Lobster", cursive;
+  font-family: Lobster, cursive;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #481600;
+  display: block;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+
+.text-decoration {
+  text-decoration: none;
+  color: #fff;
 }
 
 .main-head {
@@ -67,7 +80,7 @@ header {
 }
 
 h2, h3 {
-  font-family: "Lobster", serif;
+  font-family: Lobster, serif;
   color: #481600;
 }
 
@@ -85,6 +98,7 @@ nav {
 nav ul li {
   list-style-type: none;
   text-align: center;
+  margin: -.3rem;
 }
 
 .nav-2 li {
@@ -95,26 +109,18 @@ nav ul li {
   float: right;
 }
 
-header nav a,
-header nav a:link,
-header nav a:visited {
-  text-decoration: none;
-  display: block;
-  background-color: #fff;
-  color: #000;
-  padding: .5rem;
-  margin: -.1rem;
-}
-
 .coco-wrap a {
   text-decoration: none;
 }
 
-.nav-2 li a,
-main div figcaption a {
+.nav-2 li a {
   text-decoration: none;
   color: #fff;
   padding-right: 1rem;
+}
+
+.promo-links li a {
+  color: #fff;
 }
 
 header nav a:hover,
@@ -319,7 +325,7 @@ header nav a:active {
 .h2-experience-banner {
   margin: 0 auto;
   color: #fff;
-  padding-top: 6rem;
+  padding-top: 8rem;
   font-size: 2.5rem;
   padding-bottom: 1rem;
 }
@@ -331,10 +337,6 @@ header nav a:active {
 
 .promo-links li {
   list-style-type: none;
-}
-
-.promo-links li a {
-  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
@@ -408,6 +410,7 @@ header nav a:active {
     display: none;
   }
 
+
   header {
     position: relative;
   }
@@ -420,14 +423,22 @@ header nav a:active {
     right: 10px;
   }
 
+  .nav-2:hover,
+  .nav-2:focus,
+  .nav-2:active {
+    color: #000;
+    transition: all 250ms linear;
+  }
+
   .toggle-wrap {
     display: none;
   }
 
   .coco {
     text-align: left;
+    padding-top: 1rem;
     padding-left: 6rem;
-    padding-bottom: 1.3rem;
+    padding-bottom: .5rem;
     font-size: 1.25rem;
     color: #fff;
   }
