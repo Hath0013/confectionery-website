@@ -4,7 +4,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3 Muli, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 *, *::before, *::after {
@@ -50,13 +50,16 @@ p {
   padding-top: .5rem;
   padding-bottom: 1.3rem;
   font-size: 1.25rem;
-  font-family: "Aref Ruqaa", serif;
   color: #fff;
 }
 
+header {
+  font-family: "Lobster", cursive;
+}
+
 .main-head {
-  font-family: "Aref Ruqaa", serif;
   color: #fff;
+  font-size: 2rem;
 }
 
 .main-head ~ p {
@@ -64,7 +67,7 @@ p {
 }
 
 h2, h3 {
-  font-family: "Aref Ruqaa", serif;
+  font-family: "Lobster", serif;
   color: #481600;
 }
 
@@ -92,10 +95,6 @@ nav ul li {
   float: right;
 }
 
-.test {
-  font-size: .9rem;
-}
-
 header nav a,
 header nav a:link,
 header nav a:visited {
@@ -111,7 +110,8 @@ header nav a:visited {
   text-decoration: none;
 }
 
-.nav-2 li a {
+.nav-2 li a,
+main div figcaption a {
   text-decoration: none;
   color: #fff;
   padding-right: 1rem;
@@ -199,15 +199,60 @@ header nav a:active {
   color: #fff;
 }
 
-.btn-wrap {
-  position: absolute;
-  top: 10rem;
+.chocolate-banner-wrap {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  color: #fff;
+  text-align: center;
+
+  background-image: url("../images/icon.svg");
+  background-size: 75px auto;
+  background-color: rgba(54, 8, 0, 0.7);
+}
+
+.gifts-banner {
+
+  background: url("../images/card-7.jpg") no-repeat center bottom / cover;
+  background-color: rgba(48, 32, 19, 10);
+  height: 400px;
+  color: #fff;
+  text-align: center;
+
+}
+
+.chocolate-banner {
+
+  background: url("../images/card-4.jpg") no-repeat center bottom / cover;
+  background-color: rgba(48, 32, 19, 10);
+  height: 400px;
+  color: #fff;
+  text-align: center;
+
+}
+
+.experience-banner {
+
+  background: url("../images/chef-3.jpg") no-repeat center bottom / cover;
+  background-color: rgba(48, 32, 19, 10);
+  height: 400px;
+  color: #fff;
+  text-align: center;
+
 }
 
 .banner-body {
-  width: 100%;
+  width: 80%;
+  min-width: 60%;
   margin: 0 auto;
   display: block;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.slogan {
+  font-family: Montserrat, sans-serif;
+  font-size: .9rem;
 }
 
 .btn,
@@ -230,6 +275,7 @@ header nav a:active {
 .link-card-group {
   text-align: center;
   padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 
 .link-card {
@@ -238,6 +284,57 @@ header nav a:active {
   max-height: 125px;
   overflow: hidden;
   margin-bottom: -2rem;
+  position: relative;
+}
+
+.card-text {
+  left: 50%;
+  max-width: 45em;
+  padding: 0 1em;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: #fff;
+  font-size: 3rem;
+
+  transform: translate(-50%, -50%);
+}
+
+.h2-gifts-banner {
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 8rem;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.h2-chocolate-banner {
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 8rem;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.h2-experience-banner {
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 6rem;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.promo-links {
+  margin: 0 auto;
+  color: #fff;
+}
+
+.promo-links li {
+  list-style-type: none;
+}
+
+.promo-links li a {
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
@@ -279,13 +376,23 @@ header nav a:active {
   .link-card {
     display: inline-block;
     margin-top: 2rem;
-    max-height: 150px;
+    max-height: 100px;
     overflow: hidden;
   }
 
   .banner-wrap {
     position: relative;
     margin-bottom: -2rem;
+  }
+
+  .link-card-group {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
   }
 
 }
@@ -320,10 +427,8 @@ header nav a:active {
   .coco {
     text-align: left;
     padding-left: 6rem;
-    padding-top: .5rem;
     padding-bottom: 1.3rem;
     font-size: 1.25rem;
-    font-family: "Aref Ruqaa", serif;
     color: #fff;
   }
 
