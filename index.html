@@ -64,30 +64,30 @@
 
       <div class="link-card-group grid">
 
-        <figure class="link-card unit xs-1 s-1 m-1-3 l-1-3">
+        <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
           <a href="#">
             <img class="img-flex" src="images/card-3.jpg" alt="">
-            <figcaption class="card-text bold yotta">Gifts</figcaption>
+            <p class="card-text bold yotta">Gifts</p>
           </a>
-        </figure>
+        </div>
 
-        <figure class="link-card unit xs-1 s-1 m-1-3 l-1-3">
+        <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
           <a href="#">
             <img class="img-flex" src="images/card-1.jpg" alt="">
-            <figcaption class="card-text bold yotta">Chocolate</figcaption>
+            <p class="card-text bold yotta">Chocolate</p>
           </a>
-        </figure>
+        </div>
 
-        <figure class="link-card unit xs-1 s-1 m-1-3 l-1-3">
+        <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
           <a href="#">
             <img class="img-flex" src="images/card-5.jpg" alt="">
-            <figcaption class="card-text bold yotta">Experience</figcaption>
+            <p class="card-text bold yotta">Experience</p>
           </a>
-        </figure>
+        </div>
       </div>
 
       <div id="gifts">
-        <section class="unit xs-1 s-1 m-1 l-1 gifts-banner">
+        <section class="gifts-banner">
           <h2 class="yotta h2-gifts-banner">Something for Everyone</h2>
           <ul class="promo-links">
             <li class="text-upper milli bold push-1-2"><a href="#">Shop Gifts for Him</a></li>
@@ -98,7 +98,7 @@
       </div>
 
       <div class="pad-t-2 gutter-2 pad-b-2 chocolate-banner-wrap" id="treats">
-        <section class="unit xs-1 s-1 m-1 l-1 chocolate-banner" id="chocolate">
+        <section class="chocolate-banner" id="chocolate">
           <h2 class="yotta h2-chocolate-banner">Our Finest Chocolate</h2>
           <ul class="promo-links">
             <li class="text-upper milli bold push-1-2"><a href="#">See Our Private Collection</a></li>
@@ -108,7 +108,7 @@
         </section>
       </div>
 
-      <section class="unit xs-1 s-1 m-1 l-1 experience-banner" id="experience">
+      <section class="experience-banner" id="experience">
         <h2 class="yotta h2-experience-banner">Experience</h2>
         <ul class="promo-links">
           <li class="text-upper milli bold push-1-2"><a href="#">Our Story</a></li>
@@ -124,15 +124,14 @@
 
       <div class="gutter">
         <h2 id="contact-link">Contact</h2>
-        <p>Inquiries? Please contact Savoir Faire at:</p>
-        <p><strong>(613) 727-4723 ext. 6435</strong></p>
-        <p>We are located in E135 in the Student Commons Building.</p>
+        <p>Inquiries? Please contact Coco's Choclatier's at:</p>
+        <p><strong>(123) 456-7890 ext. 0001</strong></p>
         <h3>Daily Hours</h3>
         <p>Monday to Saturday <data value="10:30">10:30AM – 5:30PM</data></p>
         <p>(closed daily from <data value="2:30-3:30">2:30 – 3:15</data> for lunch)</p>
 
         <h3>Our Address</h3>
-        <p><strong>1385 Woodroffe Ave</strong></p>
+        <p><strong>123 Chocolate Ave</strong></p>
         <p><strong>Ottawa, ON K2G 1V8</strong></p>
       </div>
 
@@ -140,13 +139,45 @@
         <img class="map-img img-flex" src="images/placeholder-3by2.svg" alt="map of location">
       </div>
 
-      <a class="back-to-top" href="#top">
-        <p>Back to top</p>
-      </a>
-
     </section>
 
-      <footer class="unit xs-1 s-1"><small> © 2016 ALL RIGHTS RESERVED Savoire Faire </small></footer>
+    <section>
+
+      <form class="push-0" method="POST" action="https://formspree.io/hath0013@algonquinlive.com">
+      <div class="push">
+        <label for="name">Name</label>
+        <input id="name" name="name">
+      </div>
+      <div class="push">
+        <label for="email">Your email</label>
+        <input id="email" type="email" placeholder="me@me.com" name="email">
+      </div>
+      <div class="push">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option>Get a quote!</option>
+          <option>General question</option>
+          <option>Just to talk</option>
+        </select>
+      </div>
+      <div class="push">
+        <label for="details">What's up?</label>
+        <textarea id="details" name="message">
+        </textarea>
+      </div>
+      <div>
+        <button class="btn btn-light" type="submit">Send message</button>
+      </div>
+    </form>
+
+  </section>
+
+
+  <a class="back-to-top" href="#top">
+    <p>Back to top</p>
+  </a>
+
+      <footer class="unit xs-1 s-1"><small> © 2016 ALL RIGHTS RESERVED Coco's Chocolatier's</small></footer>
 
   </aside>
 

@@ -123,12 +123,17 @@ nav ul li {
   color: #fff;
 }
 
+header nav a {
+  width: 100%;
+}
+
 header nav a:hover,
 header nav a:focus,
 header nav a:active {
   background-color: #481600;
   color: #fff;
   transition: all 250ms linear;
+  width: 100%;
 }
 
 .nav {
