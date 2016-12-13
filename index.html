@@ -12,7 +12,12 @@
 </head>
 <body>
 
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
 
     <div class="label" id="top">
       <div class="logo-wrap">
@@ -60,62 +65,63 @@
 
   </header>
 
-  <main>
+  <main role="main">
 
-      <div class="link-card-group grid">
+    <div class="link-card-group grid">
 
-        <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
-          <a href="#">
+      <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
+        <a href="#">
             <img class="img-flex" src="images/card-3.jpg" alt="">
-            <p class="card-text bold yotta">Gifts</p>
-          </a>
-        </div>
-
-        <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
-          <a href="#">
-            <img class="img-flex" src="images/card-1.jpg" alt="">
-            <p class="card-text bold yotta">Chocolate</p>
-          </a>
-        </div>
-
-        <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
-          <a href="#">
-            <img class="img-flex" src="images/card-5.jpg" alt="">
-            <p class="card-text bold yotta">Experience</p>
-          </a>
-        </div>
+          <p class="card-text bold yotta">Gifts</p>
+        </a>
       </div>
 
-      <div id="gifts">
-        <section class="gifts-banner">
-          <h2 class="yotta h2-gifts-banner">Something for Everyone</h2>
-          <ul class="promo-links">
-            <li class="text-upper milli bold push-1-2"><a href="#">Shop Gifts for Him</a></li>
-            <li class="text-upper milli bold push-1-2"><a href="#">Shop Gifts for Her</a></li>
-            <li class="text-upper milli bold"><a href="#">Shop Gifts for Family</a></li>
-          </ul>
-        </section>
+      <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
+        <a href="#">
+          <img class="img-flex" src="images/card-1.jpg" alt="">
+          <p class="card-text bold yotta">Chocolate</p>
+        </a>
       </div>
 
-      <div class="pad-t-2 gutter-2 pad-b-2 chocolate-banner-wrap" id="treats">
-        <section class="chocolate-banner" id="chocolate">
-          <h2 class="yotta h2-chocolate-banner">Our Finest Chocolate</h2>
-          <ul class="promo-links">
-            <li class="text-upper milli bold push-1-2"><a href="#">See Our Private Collection</a></li>
-            <li class="text-upper milli bold push-1-2"><a href="#">See Customer Favourites</a></li>
-            <li class="text-upper milli bold"><a href="#">See What's New</a></li>
-          </ul>
-        </section>
+      <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
+        <a href="#">
+          <img class="img-flex" src="images/card-5.jpg" alt="">
+          <p class="card-text bold yotta">Experience</p>
+        </a>
       </div>
 
-      <section class="experience-banner" id="experience">
-        <h2 class="yotta h2-experience-banner">Experience</h2>
+    </div>
+
+    <div id="gifts">
+      <section class="gifts-banner">
+        <h2 class="yotta h2-gifts-banner">Something for Everyone</h2>
         <ul class="promo-links">
-          <li class="text-upper milli bold push-1-2"><a href="#">Our Story</a></li>
-          <li class="text-upper milli bold push-1-2"><a href="#">Meet Our Chefs</a></li>
-          <li class="text-upper milli bold"><a href="#">Our Blog</a></li>
+          <li class="text-upper milli bold push-1-2"><a href="#">Shop Gifts for Him</a></li>
+          <li class="text-upper milli bold push-1-2"><a href="#">Shop Gifts for Her</a></li>
+          <li class="text-upper milli bold"><a href="#">Shop Gifts for Family</a></li>
         </ul>
       </section>
+    </div>
+
+    <div class="pad-t-2 gutter-2 pad-b-2 chocolate-banner-wrap" id="treats">
+      <section class="chocolate-banner" id="chocolate">
+        <h2 class="yotta h2-chocolate-banner">Our Finest Chocolate</h2>
+        <ul class="promo-links">
+          <li class="text-upper milli bold push-1-2"><a href="#">See Our Private Collection</a></li>
+          <li class="text-upper milli bold push-1-2"><a href="#">See Customer Favourites</a></li>
+          <li class="text-upper milli bold"><a href="#">See What's New</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="experience-banner" id="experience">
+      <h2 class="yotta h2-experience-banner">Experience</h2>
+      <ul class="promo-links">
+        <li class="text-upper milli bold push-1-2"><a href="#">Our Story</a></li>
+        <li class="text-upper milli bold push-1-2"><a href="#">Meet Our Chefs</a></li>
+        <li class="text-upper milli bold"><a href="#">Our Blog</a></li>
+      </ul>
+    </section>
 
   </main>
 
@@ -136,14 +142,12 @@
       </div>
 
       <div class="map-img-wrap">
-        <img class="map-img img-flex" src="images/placeholder-3by2.svg" alt="map of location">
+        <svg><use class="map-img img-flex" xlink:href="images/all-icons.svg#icon-placeholder-3by2.svg"/></svg>
       </div>
 
     </section>
 
-    <section>
-
-      <form class="push-0" method="POST" action="https://formspree.io/hath0013@algonquinlive.com">
+    <form class="push-0" method="POST" action="https://formspree.io/hath0013@algonquinlive.com">
       <div class="push">
         <label for="name">Name</label>
         <input id="name" name="name">
@@ -170,16 +174,13 @@
       </div>
     </form>
 
-  </section>
-
-
-  <a class="back-to-top" href="#top">
-    <p>Back to top</p>
-  </a>
-
-      <footer class="unit xs-1 s-1"><small> © 2016 ALL RIGHTS RESERVED Coco's Chocolatier's</small></footer>
+    <a class="back-to-top" href="#top">
+      <p>Back to top</p>
+    </a>
 
   </aside>
+
+    <footer role="contentinfo" class="unit xs-1 s-1"><small> © 2016 ALL RIGHTS RESERVED Coco's Chocolatier's</small></footer>
 
 </body>
 </html>

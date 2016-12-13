@@ -219,7 +219,7 @@ header nav a:active {
 
   background-image: url("../images/icon.svg");
   background-size: 75px auto;
-  background-color: rgba(54, 8, 0, 0.7);
+  background-color: rgba(54, 8, 0, .7);
 }
 
 .gifts-banner {
@@ -344,6 +344,10 @@ header nav a:active {
   list-style-type: none;
 }
 
+form {
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 25em) {
 
   html {
@@ -414,7 +418,6 @@ header nav a:active {
   .nav {
     display: none;
   }
-
 
   header {
     position: relative;
