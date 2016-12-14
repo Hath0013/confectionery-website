@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Restaurant Website</title>
+  <title>Confectionery Website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -21,14 +21,14 @@
 
     <div class="label" id="top">
       <div class="logo-wrap">
-        <a href="#home"><img class="logo img-flex pad-t-1-8" src="images/placeholder-circle.svg" alt="Restaurant Corporate Logo"></a>
+        <a href="#home"><img class="img-flex" src="images/placeholder-circle.svg" alt=""></a>
       </div>
 
       <div class="coco-wrap">
-        <h1 class="coco exa">Coco's Chocolatiers</h1>
+        <h1 class="coco exa not-bold">Coco's Chocolatiers</h1>
       </div>
 
-      <nav>
+      <nav id="nav">
         <input type="checkbox" class="nav-check" id="nav-check">
         <label class="toggle-wrap nav-label" for="nav-check">
           <img class="nav-open pad-t-1-2" src="images/nav-icon.svg" alt="Open Navigation">
@@ -56,7 +56,7 @@
 
       <div class="banner">
         <div class="banner-body">
-          <h2 class="main-head yotta push-1-2 bold">Indulge Yourself</h2>
+          <h2 class="main-head yotta push-1-2 not-bold">Indulge Yourself</h2>
           <p class="slogan">Treats in all shapes and sizes.</p>
           <a class="btn" href="#treats">See the Treats</a>
         </div>
@@ -71,22 +71,28 @@
 
       <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
         <a href="#">
-            <img class="img-flex" src="images/card-3.jpg" alt="">
-          <p class="card-text bold yotta">Gifts</p>
+          <div class="embed embed-3by1">
+            <img class="img-flex embed-item" src="images/card-3.jpg" alt="">
+            <p class="card-text bold yotta">Gifts</p>
+          </div>
         </a>
       </div>
 
       <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
-        <a href="#">
-          <img class="img-flex" src="images/card-1.jpg" alt="">
-          <p class="card-text bold yotta">Chocolate</p>
-        </a>
+          <a href="#">
+            <div class="embed embed-3by1">
+              <img class="img-flex embed-item" src="images/card-1.jpg" alt="">
+              <p class="card-text bold yotta">Chocolate</p>
+            </div>
+          </a>
       </div>
 
       <div class="link-card unit xs-1 s-1 m-1-3 l-1-3">
         <a href="#">
-          <img class="img-flex" src="images/card-5.jpg" alt="">
-          <p class="card-text bold yotta">Experience</p>
+          <div class="embed embed-3by1">
+            <img class="img-flex embed-item" src="images/chef-3.jpg" alt="">
+            <p class="card-text bold yotta">Experience</p>
+          </div>
         </a>
       </div>
 
@@ -125,60 +131,70 @@
 
   </main>
 
-  <aside class="grid">
-    <section class="contact unit xs-1 s-1 m-1 l-1 pad-t-2" id="contact">
+  <div class="wrapper">
+        <h2 class="pad-t-2 push-none">Contact Us</h2>
 
-      <div class="gutter">
-        <h2 id="contact-link">Contact</h2>
-        <p>Inquiries? Please contact Coco's Choclatier's at:</p>
-        <p><strong>(123) 456-7890 ext. 0001</strong></p>
-        <h3>Daily Hours</h3>
-        <p>Monday to Saturday <data value="10:30">10:30AM – 5:30PM</data></p>
-        <p>(closed daily from <data value="2:30-3:30">2:30 – 3:15</data> for lunch)</p>
-
-        <h3>Our Address</h3>
-        <p><strong>123 Chocolate Ave</strong></p>
-        <p><strong>Ottawa, ON K2G 1V8</strong></p>
+        <div class="table-wrapper scrollable">
+          <table class="push-0">
+            <caption>Find all of our contact information below!</caption>
+            <tbody>
+              <tr>
+                <th scope="row">Daily Hours</th>
+                <td>Monday - Friday 9:00AM - 5:00PM</td>
+              </tr>
+              <tr>
+                <th scope="row">Street Address</th>
+                <td>51 Coco Ave, Ottawa ON</td>
+              </tr>
+              <tr>
+                <th scope="row">Email Address</th>
+                <td>coco@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">Phone Number</th>
+                <td>(613) 862-9695</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <div class="map-img-wrap">
-        <svg><use class="map-img img-flex" xlink:href="images/all-icons.svg#icon-placeholder-3by2.svg"/></svg>
-      </div>
+    <section class="unit xs-1 s-1 m-1 l-1 pad-t-2 form" id="form">
 
-    </section>
+      <h2 class="pad-t-2">Have a Question?</h2>
 
-    <form class="push-0" method="POST" action="https://formspree.io/hath0013@algonquinlive.com">
-      <div class="push">
-        <label for="name">Name</label>
-        <input id="name" name="name">
-      </div>
-      <div class="push">
-        <label for="email">Your email</label>
-        <input id="email" type="email" placeholder="me@me.com" name="email">
-      </div>
-      <div class="push">
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-          <option>Get a quote!</option>
-          <option>General question</option>
-          <option>Just to talk</option>
-        </select>
-      </div>
-      <div class="push">
-        <label for="details">What's up?</label>
-        <textarea id="details" name="message">
-        </textarea>
-      </div>
-      <div>
-        <button class="btn btn-light" type="submit">Send message</button>
-      </div>
-    </form>
+      <form class="push-0" method="POST" action="https://formspree.io/hath0013@algonquinlive.com">
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" name="name">
+        </div>
+        <div class="push">
+          <label for="email">Your email</label>
+          <input id="email" type="email" placeholder="me@me.com" name="email">
+        </div>
+        <div class="push">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option>Get a quote!</option>
+            <option>General question</option>
+            <option>Just to talk</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="details">What's up?</label>
+          <textarea id="details" name="message">
+          </textarea>
+        </div>
+        <div>
+          <button class="btn btn-light" type="submit">Send message</button>
+        </div>
+      </form>
 
     <a class="back-to-top" href="#top">
       <p>Back to top</p>
     </a>
 
-  </aside>
+  </section>
 
     <footer role="contentinfo" class="unit xs-1 s-1"><small> © 2016 ALL RIGHTS RESERVED Coco's Chocolatier's</small></footer>
 

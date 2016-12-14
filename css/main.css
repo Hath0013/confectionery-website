@@ -35,8 +35,8 @@ p {
   margin-left: 1.3rem;
   margin-right: -2.6em;
   float: left;
-  width: 40px;
-  padding-top: .3rem;
+  width: 30px;
+  padding-top: .5rem;
 }
 
 .logo {
@@ -47,10 +47,10 @@ p {
 .coco {
   text-align: center;
   margin: 0 auto;
-  padding-top: .5rem;
   padding-bottom: 1.3rem;
   font-size: 1.25rem;
   color: #fff;
+  margin-top: .5rem;
 }
 
 header {
@@ -86,19 +86,21 @@ h2, h3 {
 
 .label {
   padding-top: .3rem;
-  padding-bottom: .3rem;
+  margin-bottom: -.3rem;
   display: block;
   background-color: #481600;
 }
 
 nav {
   text-align: center;
+  width: 100%;
 }
 
 nav ul li {
   list-style-type: none;
   text-align: center;
-  margin: -.3rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
 }
 
 .nav-2 li {
@@ -116,30 +118,34 @@ nav ul li {
 .nav-2 li a {
   text-decoration: none;
   color: #fff;
-  padding-right: 1rem;
+  margin-right: 1rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  padding-right: .3rem;
+  padding-left: .3rem;
+  text-align: center;
 }
 
 .promo-links li a {
   color: #fff;
 }
 
-header nav a {
-  width: 100%;
-}
-
 header nav a:hover,
 header nav a:focus,
 header nav a:active {
-  background-color: #481600;
-  color: #fff;
+  color: #000;
   transition: all 250ms linear;
-  width: 100%;
+  width: 30%;
+  border: solid 2px #000;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .nav {
   background-color: #fff;
   padding: .1rem;
   display: none;
+  width: 100%;
 }
 
 .nav-2 {
@@ -164,7 +170,7 @@ header nav a:active {
 
 .toggle-wrap {
   position: absolute;
-  top: .5rem;
+  top: .1rem;
   right: .6rem;
   width: 30px;
 }
@@ -210,21 +216,9 @@ header nav a:active {
   color: #fff;
 }
 
-.chocolate-banner-wrap {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-
-  color: #fff;
-  text-align: center;
-
-  background-image: url("../images/icon.svg");
-  background-size: 75px auto;
-  background-color: rgba(54, 8, 0, .7);
-}
-
 .gifts-banner {
 
-  background: url("../images/card-7.jpg") no-repeat center bottom / cover;
+  background: url("../images/card-3.jpg") no-repeat center bottom / cover;
   background-color: rgba(48, 32, 19, 10);
   height: 400px;
   color: #fff;
@@ -234,7 +228,7 @@ header nav a:active {
 
 .chocolate-banner {
 
-  background: url("../images/card-4.jpg") no-repeat center bottom / cover;
+  background: url("../images/card-1.jpg") no-repeat center bottom / cover;
   background-color: rgba(48, 32, 19, 10);
   height: 400px;
   color: #fff;
@@ -257,7 +251,7 @@ header nav a:active {
   min-width: 60%;
   margin: 0 auto;
   display: block;
-  padding-top: 10rem;
+  padding-top: 8rem;
   text-align: center;
 }
 
@@ -306,7 +300,7 @@ header nav a:active {
   top: 50%;
   width: 100%;
   color: #fff;
-  font-size: 3rem;
+  font-size: 1.5rem;
 
   transform: translate(-50%, -50%);
 }
@@ -344,8 +338,9 @@ header nav a:active {
   list-style-type: none;
 }
 
-form {
+.form {
   margin: 0 auto;
+  display: block;
 }
 
 @media only screen and (min-width: 25em) {
@@ -371,17 +366,22 @@ form {
 
   .toggle-wrap {
     position: absolute;
-    top: .5rem;
+    top: 1px;
     right: 1rem;
-    width: 40px;
+    width: 35px;
   }
 
   .logo-wrap {
     margin-left: 1.3rem;
     margin-right: -2.6em;
     float: left;
-    width: 50px;
-    padding-top: .5rem;
+    width: 35px;
+    margin-top: .1rem;
+  }
+
+  .embed-card {
+    width: 100%;
+    height: 100%;
   }
 
   .link-card {
@@ -406,6 +406,12 @@ form {
     font-size: 1.5rem;
   }
 
+  .coco {
+    font-size: 1.5rem;
+    padding-top: 0;
+    margin-top: .1rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -427,15 +433,18 @@ form {
     display: inline-block;
     position: absolute;
     z-index: 1000;
-    top: 10px;
+    top: -10px;
     right: 10px;
   }
 
-  .nav-2:hover,
-  .nav-2:focus,
-  .nav-2:active {
-    color: #000;
+  .nav-2 a:hover,
+  .nav-2 a:focus,
+  .nav-2 a:active {
+    color: #481600;
     transition: all 250ms linear;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    background-color: #fff;
   }
 
   .toggle-wrap {
@@ -444,17 +453,21 @@ form {
 
   .coco {
     text-align: left;
-    padding-top: 1rem;
-    padding-left: 6rem;
+    padding-left: 5rem;
     padding-bottom: .5rem;
     font-size: 1.25rem;
     color: #fff;
+    margin-top: 0;
+  }
+
+  .logo-wrap {
+    padding-top: 0;
   }
 
   .link-card {
     display: inline-block;
     margin-top: 2rem;
-    max-height: 200px;
+    max-height: 175px;
     overflow: hidden;
   }
 
