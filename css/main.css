@@ -75,6 +75,10 @@ header {
   font-size: 2rem;
 }
 
+.table-h2 {
+  margin-left: .5rem;
+}
+
 .main-head ~ p {
   color: #fff;
 }
@@ -342,9 +346,14 @@ header nav a:active {
   list-style-type: none;
 }
 
-.form {
+form {
+  width: 200px;
   margin: 0 auto;
-  display: block;
+}
+
+.center-form {
+  width: 300px;
+  margin: 0 auto;
 }
 
 footer {
@@ -356,8 +365,12 @@ footer {
   color: #fff;
 }
 
-.table-h2 {
+.table-margin {
   margin-left: .5rem;
+}
+
+.form-margin {
+  margin-left: 1rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -429,7 +442,7 @@ footer {
     margin-top: .1rem;
   }
 
-  .table-h2 {
+  .table-margin {
     margin-left: 0;
   }
 
