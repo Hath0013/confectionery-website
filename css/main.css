@@ -277,6 +277,10 @@ header nav a:active {
   transition: all 250ms linear;
 }
 
+.btn-light {
+  background-color: #666;
+}
+
 .link-card-group {
   text-align: center;
   padding-top: 1rem;
@@ -341,6 +345,19 @@ header nav a:active {
 .form {
   margin: 0 auto;
   display: block;
+}
+
+footer {
+  background: url("../images/icon.svg") center bottom / cover;
+  background-size: 67px auto;
+  height: 100px;
+  margin-top: 3rem;
+  background-color: #481600;
+  color: #fff;
+}
+
+.table-h2 {
+  margin-left: .5rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -410,6 +427,10 @@ header nav a:active {
     font-size: 1.5rem;
     padding-top: 0;
     margin-top: .1rem;
+  }
+
+  .table-h2 {
+    margin-left: 0;
   }
 
 }
